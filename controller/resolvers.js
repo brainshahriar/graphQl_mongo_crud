@@ -24,7 +24,7 @@ export const resolvers = {
     deletePost:async(parent,args,context,info)=>{
         const {id} = args;
         await crudModel.findByIdAndDelete(id);
-        return "deleted";
+        return "delete";
     }
   },
 };
